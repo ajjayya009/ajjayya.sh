@@ -160,9 +160,10 @@ function enableScroll() {
   bannerSection.removeEventListener("wheel", e => e.preventDefault(), { passive: false });
   console.log('event removed');
 }
-enableScroll();
 disableScroll();
-
+if(window.screen.width < 1200){
+  enableScroll();
+}
 const circularProgress = document.querySelectorAll(".circular-progress");
 
 Array.from(circularProgress).forEach((progressBar) => {
