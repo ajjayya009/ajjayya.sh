@@ -1,5 +1,5 @@
 tsParticles.load("tsparticles",
-{
+  {
     fullScreen: { enable: false, zIndex: 0 },
     "fpsLimit": 60,
     "particles": {
@@ -98,22 +98,22 @@ tsParticles.load("tsparticles",
   }
 );
 const scrollTopBtn = document.getElementById('scrollTop');
-const bannerSection =  document.querySelector('#home');
-scrollTopBtn.addEventListener('click',function(){
+const bannerSection = document.querySelector('#home');
+scrollTopBtn.addEventListener('click', function () {
   window.scroll({
     top: 0,
     left: 0,
     behavior: 'smooth'
-   });
+  });
 })
-document.addEventListener('scroll',function(e){
- if(Math.round(e.target.scrollingElement.scrollTop) > 100){
-  scrollTopBtn.classList.remove('hidden');
-  scrollTopBtn.classList.add('fadeIn');
- }else{
-  scrollTopBtn.classList.add('hidden');
-  scrollTopBtn.classList.remove('fadeIn');
- }
+document.addEventListener('scroll', function (e) {
+  if (Math.round(e.target.scrollingElement.scrollTop) > 100) {
+    scrollTopBtn.classList.remove('hidden');
+    scrollTopBtn.classList.add('fadeIn');
+  } else {
+    scrollTopBtn.classList.add('hidden');
+    scrollTopBtn.classList.remove('fadeIn');
+  }
 })
 
 
@@ -141,7 +141,7 @@ try {
       },
     })
   )
-} catch (e) {}
+} catch (e) { }
 
 var wheelOpt = supportsPassive ? { passive: false } : false
 // call this to Disable
@@ -149,6 +149,60 @@ function disableScroll() {
   window.addEventListener('DOMMouseScroll', preventDefault, false) // older FF
   window.addEventListener('touchmove', preventDefault, wheelOpt) // mobile
   window.addEventListener('keydown', preventDefaultForScrollKeys, false)
-  bannerSection.addEventListener("wheel", e => e.preventDefault(), { passive:false });
+  bannerSection.addEventListener("wheel", e => e.preventDefault(), { passive: false });
 }
 disableScroll();
+
+const circularProgress = document.querySelectorAll(".circular-progress");
+
+Array.from(circularProgress).forEach((progressBar) => {
+  const progressValue = progressBar.querySelector(".percentage");
+  const innerCircle = progressBar.querySelector(".inner-circle");
+  let startValue = 0,
+    endValue = Number(progressBar.getAttribute("data-percentage")),
+    speed = 50,
+    progressColor = progressBar.getAttribute("data-progress-color");
+
+  const progress = setInterval(() => {
+    startValue++;
+    progressValue.textContent = `${startValue}%`;
+    innerCircle.style.backgroundColor = `${progressBar.getAttribute(
+      "data-inner-circle-color"
+    )}`;
+
+    progressBar.style.background = `conic-gradient(${progressColor} ${startValue * 3.6
+      }deg,${progressBar.getAttribute("data-bg-color")} 0deg)`;
+    if (startValue === endValue) {
+      clearInterval(progress);
+    }
+  }, speed);
+});
+
+const project_card = document.querySelectorAll('.project-card');
+
+const config = {
+  threshold: 0.5
+};
+
+const tl = new TimelineMax();
+
+let observer = new IntersectionObserver(function (entries, self) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      let overlap = '-=0.3';
+
+      if (!tl.isActive()) {
+        overlap = '+=0';
+      }
+
+      tl.to(entry.target, 0.5, { autoAlpha: 1 }, overlap);
+      self.unobserve(entry.target);
+    }
+  });
+}, config);
+
+project_card.forEach(box => {
+  observer.observe(box);
+});
+
+
