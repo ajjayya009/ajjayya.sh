@@ -151,6 +151,16 @@ function disableScroll() {
   window.addEventListener('keydown', preventDefaultForScrollKeys, false)
   bannerSection.addEventListener("wheel", e => e.preventDefault(), { passive: false });
 }
+
+//call this to enable
+function enableScroll() {
+  window.removeEventListener('DOMMouseScroll', preventDefault, false) // older FF
+  window.removeEventListener('touchmove', preventDefault, wheelOpt) // mobile
+  window.removeEventListener('keydown', preventDefaultForScrollKeys, false)
+  bannerSection.removeEventListener("wheel", e => e.preventDefault(), { passive: false });
+  console.log('event removed');
+}
+enableScroll();
 disableScroll();
 
 const circularProgress = document.querySelectorAll(".circular-progress");
