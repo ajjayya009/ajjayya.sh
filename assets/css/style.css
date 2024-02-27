@@ -669,36 +669,16 @@ video {
   height: 60px;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-\[200px\] {
-  height: 200px;
-}
-
-.h-\[calc\(200px-30px\)\] {
-  height: calc(200px - 30px);
-}
-
 .h-\[calc\(150px-30px\)\] {
   height: calc(150px - 30px);
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-8 {
   width: 2rem;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
-.w-\[calc\(200px-30px\)\] {
-  width: calc(200px - 30px);
 }
 
 .w-\[150px\] {
@@ -707,6 +687,10 @@ video {
 
 .w-\[calc\(150px-30px\)\] {
   width: calc(150px - 30px);
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-3xl {
@@ -803,20 +787,12 @@ video {
   gap: 0.75rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
 
-.gap-16 {
-  gap: 4rem;
+.gap-8 {
+  gap: 2rem;
 }
 
 .overflow-hidden {
@@ -835,6 +811,10 @@ video {
   border-radius: 1rem;
 }
 
+.rounded-\[50\%\] {
+  border-radius: 50%;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -849,10 +829,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-\[50\%\] {
-  border-radius: 50%;
 }
 
 .border {
@@ -945,28 +921,8 @@ video {
   padding: 1.25rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-\[3px\] {
   padding: 3px;
-}
-
-.p-6 {
-  padding: 1.5rem;
-}
-
-.p-12 {
-  padding: 3rem;
-}
-
-.p-11 {
-  padding: 2.75rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .px-\[5vw\] {
@@ -977,11 +933,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-\[10vh\] {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
 }
 
 .py-\[5vh\] {
@@ -1275,16 +1226,24 @@ video {
     margin-bottom: 4rem;
   }
 
+  .md\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:h-\[200px\] {
+    height: 200px;
   }
 
   .md\:h-\[calc\(100vh-60px\)\] {
     height: calc(100vh - 60px);
   }
 
-  .md\:h-\[200px\] {
-    height: 200px;
+  .md\:w-\[200px\] {
+    width: 200px;
   }
 
   .md\:w-\[500px\] {
@@ -1307,8 +1266,8 @@ video {
     width: calc(50% - 1rem);
   }
 
-  .md\:w-\[200px\] {
-    width: 200px;
+  .md\:w-\[450px\] {
+    width: 450px;
   }
 
   .md\:max-w-5xl {
@@ -1321,6 +1280,10 @@ video {
 
   .md\:gap-16 {
     gap: 4rem;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
   }
 
   .md\:p-0 {
