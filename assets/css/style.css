@@ -948,10 +948,6 @@ video {
   padding-bottom: 4vh;
 }
 
-.pl-12 {
-  padding-left: 3rem;
-}
-
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1246,8 +1242,8 @@ video {
     width: 200px;
   }
 
-  .md\:w-\[500px\] {
-    width: 500px;
+  .md\:w-\[450px\] {
+    width: 450px;
   }
 
   .md\:w-\[calc\(33\.33\%-16px\)\] {
@@ -1264,10 +1260,6 @@ video {
 
   .md\:w-\[calc\(50\%-1rem\)\] {
     width: calc(50% - 1rem);
-  }
-
-  .md\:w-\[450px\] {
-    width: 450px;
   }
 
   .md\:max-w-5xl {

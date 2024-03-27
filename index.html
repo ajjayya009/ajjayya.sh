@@ -59,12 +59,10 @@
             <div
                 class="pb-[4vh] md:py-[10vh] md:px-[10vw] w-full h-full flex flex-col items-center justify-center text-center bg-[#1e2430]/50 rounded-2xl">
                 <h1
-                    class="text-white font-bold text-4xl md:text-5xl py-6 first-letter:text-[#f55422] first-letter:font-extrabold">
+                    class="authorName text-white font-bold text-4xl md:text-5xl py-6 first-letter:text-[#f55422] first-letter:font-extrabold">
                     Ajjayya</h1>
-                <p class="text-white font-semibold text-xl italic pb-4">Angular Developer</p>
-                <!--  <p class="text-white font-normal text-xl text-balance">Elevating user interactions through innovative
-                    Angular solutions for modern web development.</p> -->
-                <ul class="flex items-center gap-3">
+                <p class="text-white font-semibold text-xl italic pb-4 authorPosition">Angular Developer</p>
+                <ul class="flex items-center gap-3 socialMedia">
                     <li
                         class="w-8 h-8 rounded-full p-[3px] cursor-pointer border border-solid border-white hover:bg-[#f55422] hover:border-[#f55422] hover:shadow-shadow2 group">
                         <a href="https://www.linkedin.com/in/ajjayya-s-h-1a3668205/" target="_blank">
@@ -87,10 +85,10 @@
             </div>
         </section>
         <section class="p-4 md:py-24 bg-white max-w-5xl mx-auto" id="aboutMe">
-            <p class="text-gray-700 text-xl md:text-4xl text-center font-bold mb-2 md:mb-8 first-letter:text-[#f55422]">About Me
+            <p class="text-gray-700 text-xl md:text-4xl text-center font-bold mb-2 md:mb-8 first-letter:text-[#f55422] aboutSec">About Me
             </p>
             <div class="flex items-center justify-between flex-wrap-reverse gap-4 md:gap-8 md:flex-nowrap">
-                <div>
+                <div class="aboutSec">
                     <p class="text-gray-600 text-[13px] md:text-xl font-normal mb-3">
                         I am a UI Front End Developer. I am a
                         creative developer and i want to use m design skills to meet the requirements of both users and
@@ -100,7 +98,7 @@
                         I have 6+ years of work experience as a UI developer. My key interest areas are User Experience Designing, user Interface Development and Front End Development.
                     </p>
                 </div>
-                <img src="assets/images/about-new.svg" alt="about" width="450" class="w-full md:w-[450px]">
+                <img src="assets/images/about-new.svg" alt="about" width="450" class="w-full md:w-[450px] aboutSec">
             </div>
         </section>
         <section class="p-4 md:py-24 bg-[#1e2430]" id="workEdu">
@@ -109,7 +107,7 @@
             <div class="max-w-5xl mx-auto">
                 <div class="flex gap-8 flex-wrap">
                     <div
-                        class="bg-[#11141b] p-4 md:p-8 rounded-md flex-shrink-0 flex-grow-0 basis-auto w-full md:w-[calc(50%-1rem)]">
+                        class="detailsWork bg-[#11141b] p-4 md:p-8 rounded-md flex-shrink-0 flex-grow-0 basis-auto w-full md:w-[calc(50%-1rem)]">
                         <div class="flex">
                             <div
                                 class="relative before:content-[''] before:absolute before:left-auto before:top-auto before:w-[1px] before:h-[calc(100%-30px)] before:bg-[#f55422] before:mt-8 after:content-[''] after:absolute after:left-auto after:top-auto after:w-2 after:h-2 after:bg-[#f55422] after:rounded-[50%] after:mt-2 after:-ml-1">
@@ -147,7 +145,7 @@
 
                     </div>
                     <div
-                        class="bg-[#11141b] p-4 md:p-8 rounded-md flex-shrink-0 flex-grow-0 basis-auto w-full md:w-[calc(50%-1rem)]">
+                        class="eduCard bg-[#11141b] p-4 md:p-8 rounded-md flex-shrink-0 flex-grow-0 basis-auto w-full md:w-[calc(50%-1rem)]">
                         <div class="flex">
                             <div
                                 class="relative before:content-[''] before:absolute before:left-auto before:top-auto before:w-[1px] before:h-[calc(100%-30px)] before:bg-[#f55422] before:mt-8 after:content-[''] after:absolute after:left-auto after:top-auto after:w-2 after:h-2 after:bg-[#f55422] after:rounded-[50%] after:mt-2 after:-ml-1">
@@ -192,7 +190,7 @@
             <p
                 class="text-gray-700 text-xl md:text-4xl text-center font-bold mb-6 md:mb-16 first-letter:text-[#f55422]">
                 Skills</p>
-            <div class="flex gap-4 md:gap-16 justify-center flex-wrap">
+            <div class="flex gap-4 md:gap-16 justify-center flex-wrap skills_progress">
                 <!-- <div class="flex-shrink-0 basis-auto grow-0 w-full md:w-[calc(33.33%-16px)]">
                     <div class="flex items-center justify-between mb-3">
                         <p class="text-sm uppercase text-black font-semibold">Angular 7+</p>
@@ -518,7 +516,7 @@
             <div
                 class="max-w-3xl mx-auto py-[5vh] md:py-[10vh] px-[5vw] w-full h-full flex flex-wrap bg-black/50 rounded-2xl gap-8">
                 <div
-                    class="bg-white border-2 border-solid border-[#F55322] p-4 rounded-xl flex-shrink-0 flex-grow-0 basis-auto w-full md:w-[calc(50%-16px)] download-btn">
+                    class="bg-white border-2 border-solid border-[#F55322] p-4 rounded-xl flex-shrink-0 flex-grow-0 basis-auto w-full md:w-[calc(50%-16px)] download-btn leftAnimation">
                     <a href="mailto:ajaysh65@gmail.com">
                         <div class="flex items-center justify-start gap-2">
                             <span class="material-symbols-outlined text-[#F55322]">
@@ -532,7 +530,7 @@
                     </a>
                 </div>
                 <div
-                    class="bg-white border-2 border-solid border-[#F55322] p-4 rounded-xl flex-shrink-0 flex-grow-0 basis-auto w-full md:w-[calc(50%-16px)] download-btn">
+                    class="bg-white border-2 border-solid border-[#F55322] p-4 rounded-xl flex-shrink-0 flex-grow-0 basis-auto w-full md:w-[calc(50%-16px)] download-btn rightAnimation">
                     <a href="https://api.whatsapp.com/send?l=en&phone=918095240084" target="_blank">
                         <div class="flex items-center justify-start gap-2">
                             <span class="material-symbols-outlined text-[#F55322]">
@@ -547,7 +545,7 @@
 
                 </div>
                 <div
-                    class="bg-white border-2 border-solid border-[#F55322] p-4 rounded-xl flex-shrink-0 flex-grow-0 basis-auto w-full md:w-[calc(50%-16px)] download-btn">
+                    class="bg-white border-2 border-solid border-[#F55322] p-4 rounded-xl flex-shrink-0 flex-grow-0 basis-auto w-full md:w-[calc(50%-16px)] download-btn leftAnimation">
                     <a href="tel:8095240084">
                         <div class="flex items-center justify-start gap-2">
                             <span class="material-symbols-outlined text-[#F55322]">
@@ -561,7 +559,7 @@
                     </a>
                 </div>
                 <div
-                    class="bg-white border-2 border-solid border-[#F55322] p-4 rounded-xl flex-shrink-0 flex-grow-0 basis-auto w-full md:w-[calc(50%-16px)] cursor-pointer download-btn">
+                    class="bg-white border-2 border-solid border-[#F55322] p-4 rounded-xl flex-shrink-0 flex-grow-0 basis-auto w-full md:w-[calc(50%-16px)] cursor-pointer download-btn rightAnimation">
                     <a href="assets/resume/AjjayyaNew.pdf" class="relative z-10" download>
                         <div class="flex items-center justify-start gap-2">
                             <span class="material-symbols-outlined text-[#F55322]">
@@ -600,10 +598,12 @@
             </ul>
         </footer>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.17.5/dist/tsparticles.min.js"
-        integrity="sha256-Wcr5q//r5yGozjRl+ToXruCoy75vgiApkKsV30aCns8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.17.5/dist/tsparticles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/animation.js"></script>
 </body>
 
 </html>
