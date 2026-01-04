@@ -1,102 +1,7 @@
-tsParticles.load("tsparticles",
-  {
-    fullScreen: { enable: false, zIndex: 0 },
-    "fpsLimit": 60,
-    "particles": {
-      "number": {
-        "value": 0,
-        "density": {
-          "enable": true,
-          "area": 800
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "circle"
-      },
-      "opacity": {
-        "value": 0.2
-      },
-      "size": {
-        "value": 3,
-        "random": {
-          "enable": true,
-          "minimumValue": 1
-        },
-        "animation": {
-          "enable": true,
-          "speed": 2,
-          "minimumValue": 1
-        }
-      },
-      "move": {
-        "enable": true,
-        "speed": 6,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "outMode": "out"
-      }
-    },
-    "interactivity": {
-      "detectsOn": "window",
-      "events": {
-        "onHover": {
-          "enable": true,
-          "mode": "trail"
-        },
-        "resize": true
-      },
-      "modes": {
-        "trail": {
-          "delay": 0.005,
-          "quantity": 10,
-          "particles": {
-            "size": {
-              "value": 50,
-              "random": {
-                "enable": true,
-                "minimumValue": 10
-              },
-              "animation": {
-                "enable": true,
-                "speed": 5,
-                "minimumValue": 10,
-                "sync": true,
-                "startValue": "min",
-                "destroy": "max"
-              }
-            },
-            "move": {
-              "enable": true,
-              "speed": 20,
-              "direction": "none",
-              "random": false,
-              "straight": false,
-              "outMode": "destroy"
-            }
-          }
-        }
-      }
-    },
-    "detectRetina": true,
-    "background": {
-      "color": "#1e2430",
-      "image": "url('assets/images/wallpaper.jpg')",
-      "position": "50% 50%",
-      "repeat": "no-repeat",
-      "size": "cover"
-    },
-    "backgroundMask": {
-      "enable": true,
-      "cover": {
-        "color": "#1e2430"
-      }
-    }
-  }
-);
+// Complete working configuration for a "linked-dots" effect
+
+
+
 const scrollTopBtn = document.getElementById('scrollTop');
 const bannerSection = document.querySelector('#home');
 scrollTopBtn.addEventListener('click', function () {
@@ -161,7 +66,7 @@ function enableScroll() {
   console.log('event removed');
 }
 disableScroll();
-if(window.screen.width < 1200){
+if (window.screen.width < 1200) {
   enableScroll();
 }
 const circularProgress = document.querySelectorAll(".circular-progress");
@@ -190,3 +95,65 @@ Array.from(circularProgress).forEach((progressBar) => {
 });
 
 
+const textElement = document.getElementById('typing-text');
+const phrases = ["Angular Developer.", "AEM Developer.", "Front-end Developer.", "Javascript Enthusiast."];
+const typeSpeed = 200;
+const eraseSpeed = 100;
+const delayBetweenPhrases = 2000;
+
+// Optimized helper function for pauses
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+async function typeEffect() {
+  let i = 0;
+  
+  while (true) {
+    let currentPhrase = phrases[i];
+    
+    // Type the phrase
+    for (let char of currentPhrase) {
+      textElement.textContent += char;
+      await sleep(typeSpeed);
+    }
+    
+    // Pause at the end
+    await sleep(delayBetweenPhrases);
+    
+    // Erase the phrase
+    while (textElement.textContent.length > 0) {
+      textElement.textContent = textElement.textContent.slice(0, -1);
+      await sleep(eraseSpeed);
+    }
+    
+    // Move to next phrase
+    i = (i + 1) % phrases.length;
+    await sleep(500);
+  }
+}
+
+// Start the animation
+typeEffect();
+
+
+// Weak deterrent: intercept common DevTools keyboard shortcuts
+(function () {
+  if (typeof window === 'undefined') return;
+  // Set window.__ALLOW_DEVTOOLS = true in console to bypass during development
+  if (window.__ALLOW_DEVTOOLS) return;
+
+  function devtoolsKeyHandler(e) {
+    const key = e.key ? e.key.toUpperCase() : '';
+    if (
+      e.key === 'F12' ||
+      (e.ctrlKey && e.shiftKey && (key === 'I' || key === 'J' || key === 'C')) ||
+      (e.ctrlKey && key === 'U')
+    ) {
+      e.preventDefault();
+      e.stopPropagation();
+      console.warn('This keyboard shortcut is disabled on this site.');
+      return false;
+    }
+  }
+
+  window.addEventListener('keydown', devtoolsKeyHandler, true);
+})();
