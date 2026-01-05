@@ -2,593 +2,650 @@
 <html class="scroll-smooth" lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ajjayya S H - Angular Developer</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon-16x16.png">
-  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.css" rel="stylesheet" />
-  <link rel="stylesheet"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="title" content="Ajjayya S H | AEM & Angular Developer" />
+    <meta name="description" content="AEM and Angular Developer with experience in scalable UI and Adobe Experience Manager." />
+    <title>Ajjayya S H | AEM & Angular Developer</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets//css/custom.css">
-  <style>
-    .tsparticles {
-      position: absolute;
-      margin: 0;
-      padding: 0;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets//css/custom.css">
+    <style>
+        .tsparticles {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
 
-    #light canvas {
-      background-color: #FFFFFF;
-    }
+        #light canvas {
+            background-color: #FFFFFF;
+        }
 
-    #dark canvas {
-      background-color: #000000;
-    }
-  </style>
+        #dark canvas {
+            background-color: #000000;
+        }
+    </style>
 </head>
 
-<body oncontextmenu="return false;">
-  <header
-    class="bg-white/75 h-[60px] backdrop-blur-lg fixed w-full z-30 shadow-md border-b-2 border-solid border-gray-200">
-    <nav class="flex items-center justify-between max-w-5xl mx-auto h-full">
-      <a class="text-white text-lg font-black first-letter:text-[#f55422] pl-4 pt-1 md:p-0" href="#">
-        <img src="assets/images/logo.svg" alt="logo" width="60" height="60" class="brightness-0">
-      </a>
-      <ul class="hidden md:flex items-center h-full">
-        <li class="p-4"><a class="text-black text-base font-normal relative navlink" href="#home">Home</a></li>
-        <li class="p-4"><a class="text-black text-base font-normal relative navlink" href="#aboutMe">About</a></li>
-        <li class="p-4"><a class="text-black text-base font-normal relative navlink" href="#aboutMe">Skills</a></li>
-        <li class="p-4"><a class="text-black text-base font-normal relative navlink" href="#projects">Projects</a></li>
-        <li class="p-4"><a class="text-black text-base font-normal relative navlink" href="#contactUs">Contact</a></li>
-        <li class="px-4 py-[10px]">
-          <a href="assets/resume/AjjayyaNew.pdf"
-            class="relative z-10 border border-[#e2e8f0] rounded-md px-4 py-1 border-solid block hover:bg-[#f1f5f9]" download>
-            <div class="flex items-center justify-start gap-2">
-              <span class="material-symbols-outlined text-[#F55322]">
-                download
-              </span>
-              <div class="flex flex-col">
-                <span class="text-base text-black font-normal">Download Resume</span>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="px-4 py-[10px]">
-          <a href="mailto:ajaysh65@gmail.com" class="bg-[#f55422] text-white font-medium py-2 px-4 rounded-lg">
-            Hire Me
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="pt-[60px]">
-    <!-- <div id="tsparticles"></div> -->
-    <div id="light" class="tsparticles hidden md:block"></div>
-    <div id="dark" class="tsparticles hidden"></div>
-    <div id="scrollTop"
-      class="fixed right-4 md:right-8 bottom-4 md:bottom-8 z-20 cursor-pointer w-8 h-8 rounded-full p-1 bg-[#f55422] items-center justify-center hidden fadeIn animate-bounce">
-      <span class="material-symbols-outlined text-white font-extrabold">
-        keyboard_double_arrow_up
-      </span>
-    </div>
-    <a href="#aboutMe"
-      class="absolute z-20 cursor-pointer top-[calc(100%-60px)] left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full p-1 bg-[#f55422] hidden md:flex items-center justify-center animate-bounce">
-      <span class="material-symbols-outlined text-white font-extrabold">
-        keyboard_double_arrow_down
-      </span>
-    </a>
-    <section class="p-4 pt-0 md:pt-0 md:p-28 w-full md:max-w-5xl mx-auto h-full md:h-[calc(100vh-60px)] flex items-center" id="home">
-      <div
-        class="pb-[4vh] md:py-[10vh] md:px-[10vw] w-full h-full flex flex-col items-center justify-center text-center">
-        <h1 class="authorName text-black font-bold text-3xl md:text-5xl pb-4 py-6 md:pb-6">
-          Hi, I'm <span class="text-[#f55422]">Ajjayya</span></h1>
-        <div class="container authorPosition pb-4 text-2xl md:text-3xl">
-          <span class="text-[#4a4e69] font-semibold ">I'm a </span>
-          <span id="typing-text" class="text-[#f55422] font-bold"></span><span class="cursor">|</span>
-        </div>
-        <p class="text-[#4a4e69] text-sm md:text-lg font-normal mb-6 md:mb-12 authorDescription">
-          Technology Lead with 8+ years of experience in building enterprise front-end applications. Currently
-          developing responsive interfaces and features at T-Mobile.
-        </p>
-        <div class="flex items-center justify-center flex-wrap gap-3 socialMedia">
-          <a href="assets/resume/AjjayyaNew.pdf"
-            class="relative z-10 border border-[#f1f5f9] rounded-md px-4 py-2 border-solid block hover:bg-[#e2e8f0] group" download>
-            <div class="flex items-center justify-start gap-2">
-              <span class="material-symbols-outlined text-[#F55322]">
-                download
-              </span>
-              <div class="flex flex-col">
-                <span class="text-sm md:text-base text-black font-normal">Download Resume</span>
-              </div>
-            </div>
-          </a>
-          <a href="mailto:ajaysh65@gmail.com" class="bg-[#f55422] text-sm md:text-base text-white font-medium py-2 px-4 rounded-lg group">
-            Hire Me
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="p-4 md:py-24 max-w-5xl mx-auto" id="aboutMe">
-      <h2 class="text-gray-700 text-xl md:text-4xl text-center font-bold mb-6 md:mb-16 first-letter:text-[#f55422]">
-        About Me</h2>
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
-        <div class="flex items-end bg-[#0f172a] p-6 rounded-2xl grid-1 aboutSec">
-          <img src="./assets/images/coding-pov.png"
-            class="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-52 md:inset-y-14 lg:scale-[2.5]" />
-          <div class="z-10">
-            <p class="headtext text-[#f55422] font-bold">Hi, I'm Ajjayya</p>
-            <p class="subtext text-[#E2E8F0] md:text-sm text-xs ">
-              As a Technology Lead with 8 years and 10 months of experience, I specialize in building enterprise-grade,
-              single-page applications using <strong>Angular (2-18)</strong>, with a focus on reactive state management
-              and modular design. My foundation is built on the advanced implementation of <strong>TypeScript and
-                JavaScript (ES6+)</strong> to ensure the delivery of scalable, type-safe, and performant code. Beyond
-              core frameworks, I have hands-on experience with <strong>Adobe Experience Manager (AEM)</strong>, where I
-              develop custom components and integrate them into modern front-end workflows. I am deeply committed to
-              engineering standards, including Digital Accessibility (WCAG), clean coding principles, and cross-browser
-              responsiveness.
-            </p>
-          </div>
-          <div class="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo">
-          </div>
-        </div>
-
-        <div class="bg-[#0f172a] rounded-2xl p-6 grid-2 aboutSec">
-          <p class="text-2xl pb-6 text-white  font-bold">Skills</p>
-          <ul class="flex flex-row flex-wrap gap-2 w-full items-center ">
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
-              Angular
-            </li>
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
-              AEM
-            </li>
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
-              TypeScript
-            </li>
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
-              JavaScript
-            </li>
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
-              HTML5 & CSS3
-            </li>
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
-              SCSS/Sass
-            </li>
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
-              Tailwind CSS
-            </li>
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
-              Bootstrap 3+
-            </li>
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
-              PrimeNg
-            </li>
-          </ul>
-        </div>
-        <div class="grid-black-color grid-3 aboutSec overflow-hidden overflow-y-auto">
-          <p class="text-2xl pb-6 text-white  font-bold">Development Tools & Platforms</p>
-          <ul class="flex flex-row flex-wrap gap-2 w-full items-center ">
-            <li
-              class="py-2 px-4 text-[#E2E8F0] text-sm text-start rounded-2xl border border-solid border-[#E2E8F0] font-medium bg-transparent  w-full">
-              Git & GitHub
-            </li>
-            <li
-              class="py-2 px-4 text-[#E2E8F0] text-sm text-start rounded-2xl border border-solid border-[#E2E8F0] font-medium bg-transparent  w-full">
-              VS Code
-            </li>
-            <li
-              class="py-2 px-4 text-[#E2E8F0] text-sm text-start rounded-2xl border border-solid border-[#E2E8F0] font-medium bg-transparent  w-full">
-              Figma
-            </li>
-            <li
-              class="py-2 px-4 text-[#E2E8F0] text-sm text-start rounded-2xl border border-solid border-[#E2E8F0] font-medium bg-transparent  w-full">
-              Jira & Confluence
-            </li>
-          </ul>
-        </div>
-        <div class="bg-[#737687] rounded-2xl p-6 grid-4 aboutSec">
-          <div class="flex flex-col items-center justify-center gap-4 size-full">
-            <p class="text-center headtext text-base text-black font-bold">
-              Do you want to start a project together?
-            </p>
-            <a href="mailto:ajaysh65@gmail.com" class="bg-[#f55422] hover:bg-white hover:text-black text-white font-medium py-2 px-4 rounded-lg">
-              Hire Me
+<body class="font-sans" oncontextmenu="return false;">
+    <header
+        class="bg-white/75 h-[60px] backdrop-blur-lg fixed w-full z-30 shadow-md border-b-2 border-solid border-gray-200">
+        <nav class="flex items-center justify-between max-w-5xl mx-auto h-full">
+            <a class="text-white text-lg font-black first-letter:text-[#f55422] pl-4 pt-1 md:p-0" href="#">
+                <img src="assets/images/logo.svg" alt="logo" width="60" height="60" class="brightness-0">
             </a>
-          </div>
-        </div>
-        <div class="bg-[#3b4157] rounded-2xl p-6 grid-5 aboutSec">
-          <p class="text-2xl pb-6 text-white  font-bold">Methodologies & Practices</p>
-          <ul class="flex flex-row flex-wrap gap-2 w-full items-center ">
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-transparent">
-              Agile Development
-            </li>
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-transparent">
-              Responsive Design
-            </li>
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-transparent">
-              Code Quality
-            </li>
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-transparent">
-              Performance Optimization
-            </li>
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-transparent">
-              Accessibility (WCAG)
-            </li>
-            <li
-              class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-transparent">
-              REST API Integration
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="p-4 md:py-24 bg-white max-w-5xl mx-auto" id="projects">
-      <p class="text-gray-700 text-xl md:text-4xl text-center font-bold mb-6 md:mb-16 first-letter:text-[#f55422]">
-        Projects</p>
-      <div class="flex flex-col gap-4">
-        <div
-          class="flex-wrap items-center justify-between p-4 flex gap-3 shadow-shadow1 border rounded-lg preview-section">
-          <div class="flex-shrink-0 flex-grow-0 basis-auto sm:w-4/6 w-full">
-            <p class="text-base font-bold">Infosys Limited | Client: T-Mobile</p>
-            <img src="./assets/images/t-mobile.png" alt="Digit Insurance" class="swipeImage">
-            <div class="flex gap-5 my-3 text-sand text-[13px] font-normal">
-              <p class="text-[#6c757d]">T-Mobile provides wireless communication services, including mobile phone plans (postpaid/prepaid), home internet via 5G/4G, and various devices like smartphones and tablets, focusing on its 5G network with perks like streaming benefits, international roaming, and IoT solutions for businesses, aiming for broad coverage and customer value</p>
-            </div>
-            <div>
-              <ul class="flex gap-2 items-center justify-start flex-wrap">
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  Angular 20</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  AEM</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  TypeScript</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  HTML5</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  CSS3</li>
-              </ul>
-            </div>
-          </div>
-          <a href="https://www.godigit.com/" class="flex items-center gap-1 cursor-pointer hover-animation text-xs font-medium" target="_blank">
-            Read More
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-        <div
-          class="flex-wrap items-center justify-between p-4 flex gap-3 shadow-shadow1 border rounded-lg preview-section">
-          <div class="flex-shrink-0 flex-grow-0 basis-auto sm:w-4/6 w-full">
-            <p class="text-base font-bold">Digit Insurance</p>
-            <img src="./assets/images/digit_website_new.png" alt="Digit Insurance" class="swipeImage">
-            <div class="flex gap-5 my-3 text-sand text-[13px] font-normal">
-              <p class="text-[#6c757d]">Digit is an innovative insurance company that prioritizes simplicity and
-                customer satisfaction through its user-friendly digital platforms and transparent policies.</p>
-            </div>
-            <div>
-              <ul class="flex gap-2 items-center justify-start flex-wrap">
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  Angular 14+</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  AEM</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  TypeScript</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  HTML5</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  SCSS</li>
-              </ul>
-            </div>
-          </div>
-          <a href="https://www.godigit.com/" class="flex items-center gap-1 cursor-pointer hover-animation text-xs font-medium" target="_blank">
-            Read More
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-        <div
-          class="flex-wrap items-center justify-between p-4 flex gap-3 shadow-shadow1 border rounded-lg preview-section">
-          <div class="flex-shrink-0 flex-grow-0 basis-auto sm:w-4/6 w-full">
-            <p class="text-base font-bold">ANDWEMET</p>
-            <img src="./assets/images/andwemet.png" alt="carvewing" class="swipeImage">
-            <div class="flex gap-5 my-3 text-sand text-[13px] font-normal">
-              <p class="text-[#6c757d]">andwemet is designed for singles aged 28 and above who are seeking serious,
-                committed relationships rather than casual dating.</p>
-            </div>
-            <div>
-              <ul class="flex gap-2 items-center justify-start flex-wrap">
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  Angular 8</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  TypeScript</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  HTML5</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  Bootstrap 3</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  CSS3</li>
-              </ul>
-            </div>
-          </div>
-          <a href="https://andwemet.com/"class="flex items-center gap-1 cursor-pointer hover-animation text-xs font-medium">
-            Read More
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-        <div
-          class="flex-wrap items-center justify-between p-4 flex gap-3 shadow-shadow1 border rounded-lg preview-section">
-          <div class="flex-shrink-0 flex-grow-0 basis-auto sm:w-4/6 w-full">
-            <p class="text-base font-bold">Neehees</p>
-            <img src="./assets/images/neehees.png" alt="carvewing" class="swipeImage">
-            <div class="flex gap-5 my-3 text-sand text-[13px] font-normal">
-              <p class="text-[#6c757d]">Bringing Indian Vegetarian and Vegan-Friendly Street Food to America.</p>
-            </div>
-            <div>
-              <ul class="flex gap-2 items-center justify-start flex-wrap">
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  wordpress</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  Jquery</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  HTML5</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  Bootstrap 3</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  CSS3</li>
-              </ul>
-            </div>
-          </div>
-          <a href="https://www.neehees.com/" class="flex items-center gap-1 cursor-pointer hover-animation text-xs font-medium">
-            Read More
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-        <div
-          class="flex-wrap items-center justify-between p-4 flex gap-3 shadow-shadow1 border rounded-lg preview-section">
-          <div class="flex-shrink-0 flex-grow-0 basis-auto sm:w-4/6 w-full">
-            <p class="text-base font-bold">Carvewing Solutions LLP</p>
-            <img src="./assets/images/carvewing.png" alt="carvewing" class="swipeImage">
-            <div class="flex gap-5 my-3 text-sand text-[13px] font-normal">
-              <p class="text-[#6c757d]">A static website to showcase of carvewing company.</p>
-            </div>
-            <div>
-              <ul class="flex gap-2 items-center justify-start flex-wrap">
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  wordpress</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  Jquery</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  HTML5</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  Bootstrap 3</li>
-                <li
-                  class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
-                  CSS3</li>
-              </ul>
-            </div>
-          </div>
-          <a href="https://carvewing.com/" class="flex items-center gap-1 cursor-pointer hover-animation text-xs font-medium">
-            Read More
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="p-4 md:py-24" id="workEdu">
-      <p class="text-gray-700 text-xl md:text-4xl text-center font-bold mb-6 md:mb-16 first-letter:text-[#f55422]">Work
-      </p>
-      <div class="max-w-5xl mx-auto">
-        <div class="flex gap-8 flex-wrap">
-          <div class="detailsWork bg-[#11141b] p-4 md:p-8 rounded-md flex-shrink-0 flex-grow-0 basis-auto w-full">
-            <div class="flex">
-              <div
-                class="relative before:content-[''] before:absolute before:left-auto before:top-auto before:w-[1px] before:h-[calc(100%-30px)] before:bg-[#f55422] before:mt-8 after:content-[''] after:absolute after:left-auto after:top-auto after:w-2 after:h-2 after:bg-[#f55422] after:rounded-[50%] after:mt-2 after:-ml-1">
-              </div>
-              <div class="pl-6 md:pl-12 mb-12">
-                <h4 class="text-white text-lg font-bold mb-2">Infosys Limited | Client: T-Mobile</h4>
-                <p class="text-white text-[10px] font-medium bg-[#f55422] p-1 mb-2 inline-block">Aug 2024 -
-                  Present</p>
-                <p class="text-[#c5c5c5] text-sm font-bold mb-4">Technology Lead</p>
-                <p class="text-[#c5c5c5] text-sm font-normal">
-                  Collaborated closely with the client team to identify and resolve critical bugs in a production
-                  environment, improving overall application stability.Analyzed root causes of recurring issues and
-                  implemented long-term fixes, reducing bug reoccurrence.Coordinated with QA and end-users to debug and
-                  implement solutions for compatibility challenges, enhancing overall code quality and
-                  maintainability.Contributed to a stable launch of the client's app post-Angular 18 upgrade.
-                </p>
-              </div>
-            </div>
-            <div class="flex">
-              <div
-                class="relative before:content-[''] before:absolute before:left-auto before:top-auto before:w-[1px] before:h-[calc(100%-30px)] before:bg-[#f55422] before:mt-8 after:content-[''] after:absolute after:left-auto after:top-auto after:w-2 after:h-2 after:bg-[#f55422] after:rounded-[50%] after:mt-2 after:-ml-1">
-              </div>
-              <div class="pl-6 md:pl-12 mb-12">
-                <h4 class="text-white text-lg font-bold mb-2">Digit Insurance</h4>
-                <p class="text-white text-[10px] font-medium bg-[#f55422] p-1 mb-2 inline-block">Aug 2021 -
-                 Aug 2024</p>
-                <p class="text-[#c5c5c5] text-sm font-bold mb-4">Software Engineer</p>
-                <p class="text-[#c5c5c5] text-sm font-normal">
-                  I am responsible for developing and maintaining software applications. The role
-                  involves coding, testing, and debugging to ensure the creation of efficient and
-                  high-quality software. Collaborating closely with cross-functional teams, contribute
-                  to the successful delivery of projects by translating user requirements into
-                  functional code solutions.
-                </p>
-              </div>
-            </div>
-            <div class="flex">
-              <div
-                class="relative before:content-[''] before:absolute before:left-auto before:top-auto before:w-[1px] before:h-[calc(100%-30px)] before:bg-[#f55422] before:mt-8 after:content-[''] after:absolute after:left-auto after:top-auto after:w-2 after:h-2 after:bg-[#f55422] after:rounded-[50%] after:mt-2 after:-ml-1">
-              </div>
-              <div class="pl-6 md:pl-12">
-                <h4 class="text-white text-lg font-bold mb-2">Carvewing Solutions LLP</h4>
-                <p class="text-white text-[10px] font-medium bg-[#f55422] p-1 mb-2 inline-block">May 2017 -
-                  Aug 2021</p>
-                <p class="text-[#c5c5c5] text-sm font-bold mb-4">Software Engineer</p>
-                <p class="text-[#c5c5c5] text-sm font-normal">
-                  Designing websites, UI Designs, front end development (HTML,CSS,Javascript,Jquery),
-                  Designing HTML email templates, Working with the marketing team to plan and
-                  implement designs.
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="p-4 md:pt-24 bg-[rgba(241,245,249,0.3)]" id="contactUs">
-      <p class="text-gray-700 text-xl md:text-4xl text-center font-bold mb-8 capitalize first-letter:text-[#f55422]">
-        Get in touch</p>
-      <div class="max-w-5xl mx-auto flex gap-6 flex-wrap">
-        <div
-          class="flex-shrink-0 flex-grow-0 basis-auto md:w-[calc(50%-12px)] w-full border border-[#E2E8F0] border-solid p-4 rounded-lg contctAnimation">
-          <div class="mb-4">
-            <h3 class="text-lg font-bold">Contact Information</h3>
-            <div>
-              <div class="flex items-start gap-3 mt-4">
-                <i class="far fa-envelope"></i>
-                <div class="flex items-start flex-col">
-                  <p class="text-black text-base font-semibold mb-1">
-                    Email:</p>
-                  <a href="mailto:ajaysh65@gmail.com" class="text-[#f55422] text-sm font-medium">ajaysh65@gmail.com</a>
-                </div>
-              </div>
-              <div class="flex items-start gap-3 mt-4">
-                <i class="fas fa-phone"></i>
-                <div class="flex items-start flex-col">
-                  <p class="text-black text-base font-semibold mb-1">
-                    Phone:</p>
-                  <a href="tel:8095240084" class="text-[#f55422] text-sm font-medium">+91 8095240084</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold mb-2">Connect with me</h3>
-            <ul class="flex items-center justify-start gap-2">
-              <li
-                class="w-8 h-8 rounded-full p-[3px] cursor-pointer flex items-center justify-center border border-solid border-white hover:bg-[#f55422]">
-                <a href="https://www.linkedin.com/in/ajjayya-s-h-1a3668205/" target="_blank">
-                  <i class="fab fa-linkedin-in text-base text-black group-hover:text-black"></i>
-                </a>
-              </li>
-              <li
-                class="w-8 h-8 rounded-full p-[3px] cursor-pointer flex items-center justify-center border border-solid border-white hover:bg-[#f55422]">
-                <a href="mailto:ajaysh65@gmail.com">
-                  <i class="far fa-envelope text-base text-black group-hover:text-black"></i>
-                </a>
-              </li>
-              <li
-                class="w-8 h-8 rounded-full p-[3px] cursor-pointer flex items-center justify-center border border-solid border-white hover:bg-[#f55422]">
-                <a href="https://github.com/ajjayya009" target="_blank">
-                  <i class="fab fa-github text-base text-black group-hover:text-black"></i>
-                </a>
-              </li>
+            <ul class="hidden md:flex items-center h-full">
+                <li class="p-4"><a class="text-black text-base font-normal relative navlink" href="#home">Home</a></li>
+                <li class="p-4"><a class="text-black text-base font-normal relative navlink" href="#aboutMe">About</a>
+                </li>
+                <li class="p-4"><a class="text-black text-base font-normal relative navlink" href="#aboutMe">Skills</a>
+                </li>
+                <li class="p-4"><a class="text-black text-base font-normal relative navlink"
+                        href="#projects">Projects</a></li>
+                <li class="p-4"><a class="text-black text-base font-normal relative navlink"
+                        href="#contactUs">Contact</a></li>
+                <li class="px-4 py-[10px]">
+                    <a href="assets/resume/AjjayyaNew.pdf"
+                        class="relative z-10 border border-[#e2e8f0] rounded-md px-4 py-1 border-solid block hover:bg-[#f1f5f9]"
+                        download>
+                        <div class="flex items-center justify-start gap-2">
+                            <span class="material-symbols-outlined text-[#F55322]">
+                                download
+                            </span>
+                            <div class="flex flex-col">
+                                <span class="text-base text-black font-normal">Download Resume</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="px-4 py-[10px]">
+                    <a href="mailto:ajaysh65@gmail.com"
+                        class="bg-[#f55422] text-white font-medium py-2 px-4 rounded-lg">
+                        Hire Me
+                    </a>
+                </li>
             </ul>
-          </div>
+        </nav>
+    </header>
+    <main class="pt-[60px]">
+        <!-- <div id="tsparticles"></div> -->
+        <div id="light" class="tsparticles hidden md:block"></div>
+        <div id="dark" class="tsparticles hidden"></div>
+        <div id="scrollTop"
+            class="fixed right-4 md:right-8 bottom-4 md:bottom-8 z-20 cursor-pointer w-8 h-8 rounded-full p-1 bg-[#f55422] items-center justify-center hidden fadeIn animate-bounce">
+            <span class="material-symbols-outlined text-white font-extrabold">
+                keyboard_double_arrow_up
+            </span>
         </div>
-        <div
-          class="flex-shrink-0 flex-grow-0 basis-auto md:w-[calc(50%-12px)] w-full border border-[#E2E8F0] border-solid px-8 pt-6 pb-8 rounded-lg contctAnimation">
-          <div class="w-full">
-            <form class="shadow-md rounded" id="contactForm" novalidate>
-              <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-semibold mb-2" for="username">
-                  Name
-                </label>
-                <input
-                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent"
-                  id="username" name="username" type="text" placeholder="Name" aria-describedby="username-error">
-                  <p id="username-error" class="text-red-600 text-sm mt-1 hidden" role="alert"></p>
-              </div>
-              <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-semibold mb-2" for="password">
-                  Email
-                </label>
-                <input
-                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline bg-transparent"
-                  id="email" type="email" name="email" placeholder="Email" aria-describedby="email-error">
-                  <p id="email-error" class="text-red-600 text-sm mt-1 hidden" role="alert"></p>
-              </div>
-              <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-semibold mb-2" for="message">
-                  Message
-                </label>
-                <textarea
-                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent"
-                  id="message" name="message" rows="6" placeholder="Your message here..." aria-describedby="message-error"></textarea>
-                   <p id="message-error" class="text-red-600 text-sm mt-1 hidden" role="alert"></p>
-              </div>
-              <div class="flex items-center justify-between">
-                <button
-                type="submit"
-                id="submitBtn"
-                class="bg-[#f55422] hover:bg-[#f55422] text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="p-4 bg-[#1e2430]">
-      <p class="text-center text-gray-600 text-xs font-medium">Ajjayya S H &copy; 2024</p>
-    </footer>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/js/fontawesome.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/engine@3.0.3"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/all@3.0.3"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-  <script src="assets/js/particles.js"></script>
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="./assets/js/validation.js"></script>
+        <a href="#aboutMe"
+            class="absolute z-20 cursor-pointer top-[calc(100%-60px)] left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full p-1 bg-[#f55422] hidden md:flex items-center justify-center animate-bounce">
+            <span class="material-symbols-outlined text-white font-extrabold">
+                keyboard_double_arrow_down
+            </span>
+        </a>
+        <section
+            class="p-4 pt-0 md:pt-0 md:p-28 w-full md:max-w-5xl mx-auto h-full md:h-[calc(100vh-60px)] flex items-center"
+            id="home">
+            <div
+                class="pb-[4vh] md:py-[10vh] md:px-[10vw] w-full h-full flex flex-col items-center justify-center text-center">
+                <h1 class="authorName text-black font-bold text-3xl md:text-5xl pb-4 py-6 md:pb-6">
+                    Hi, I'm <span class="text-[#f55422]">Ajjayya</span></h1>
+                <div class="container authorPosition pb-4 text-2xl md:text-3xl">
+                    <span class="text-[#4a4e69] font-semibold ">I'm a </span>
+                    <span id="typing-text" class="text-[#f55422] font-bold"></span><span class="cursor">|</span>
+                </div>
+                <p class="text-[#4a4e69] text-sm md:text-lg font-normal mb-6 md:mb-12 authorDescription">
+                    Technology Lead with 8+ years of experience in building enterprise front-end applications. Currently
+                    developing responsive interfaces and features at T-Mobile.
+                </p>
+                <div class="flex items-center justify-center flex-wrap gap-3 socialMedia">
+                    <a href="assets/resume/AjjayyaNew.pdf"
+                        class="relative z-10 border border-[#f1f5f9] rounded-md px-4 py-2 border-solid block hover:bg-[#e2e8f0] group"
+                        download>
+                        <div class="flex items-center justify-start gap-2">
+                            <span class="material-symbols-outlined text-[#F55322]">
+                                download
+                            </span>
+                            <div class="flex flex-col">
+                                <span class="text-sm md:text-base text-black font-normal">Download Resume</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="mailto:ajaysh65@gmail.com"
+                        class="bg-[#f55422] text-sm md:text-base text-white font-medium py-2 px-4 rounded-lg group">
+                        Hire Me
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="p-4 md:py-24 max-w-5xl mx-auto" id="aboutMe">
+            <h2
+                class="text-gray-700 text-xl md:text-4xl text-center font-bold mb-6 md:mb-16 first-letter:text-[#f55422]">
+                About Me</h2>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
+                <div class="flex items-end bg-[#0f172a] p-6 rounded-2xl grid-1 aboutSec">
+                    <img src="./assets/images/coding-pov.png"
+                        class="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-52 md:inset-y-14 lg:scale-[2.5]" />
+                    <div class="z-10">
+                        <p class="headtext text-[#f55422] font-bold">Hi, I'm Ajjayya</p>
+                        <p class="subtext text-[#E2E8F0] md:text-sm text-xs ">
+                            As a Technology Lead with 8 years and 10 months of experience, I specialize in building
+                            enterprise-grade,
+                            single-page applications using <strong>Angular (2-18)</strong>, with a focus on reactive
+                            state management
+                            and modular design. My foundation is built on the advanced implementation of
+                            <strong>TypeScript and
+                                JavaScript (ES6+)</strong> to ensure the delivery of scalable, type-safe, and performant
+                            code. Beyond
+                            core frameworks, I have hands-on experience with <strong>Adobe Experience Manager
+                                (AEM)</strong>, where I
+                            develop custom components and integrate them into modern front-end workflows. I am deeply
+                            committed to
+                            engineering standards, including Digital Accessibility (WCAG), clean coding principles, and
+                            cross-browser
+                            responsiveness.
+                        </p>
+                    </div>
+                    <div
+                        class="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo">
+                    </div>
+                </div>
+
+                <div class="bg-[#0f172a] rounded-2xl p-6 grid-2 aboutSec">
+                    <p class="text-2xl pb-6 text-white  font-bold">Skills</p>
+                    <ul class="flex flex-row flex-wrap gap-2 w-full items-center ">
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
+                            Angular
+                        </li>
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
+                            AEM
+                        </li>
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
+                            TypeScript
+                        </li>
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
+                            JavaScript
+                        </li>
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
+                            HTML5 & CSS3
+                        </li>
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
+                            SCSS/Sass
+                        </li>
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
+                            Tailwind CSS
+                        </li>
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
+                            Bootstrap 3+
+                        </li>
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-storm">
+                            PrimeNg
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-black-color grid-3 aboutSec overflow-hidden overflow-y-auto">
+                    <p class="text-2xl pb-6 text-white  font-bold">Development Tools & Platforms</p>
+                    <ul class="flex flex-row flex-wrap gap-2 w-full items-center ">
+                        <li
+                            class="py-2 px-4 text-[#E2E8F0] text-sm text-start rounded-2xl border border-solid border-[#E2E8F0] font-medium bg-transparent  w-full">
+                            Git & GitHub
+                        </li>
+                        <li
+                            class="py-2 px-4 text-[#E2E8F0] text-sm text-start rounded-2xl border border-solid border-[#E2E8F0] font-medium bg-transparent  w-full">
+                            VS Code
+                        </li>
+                        <li
+                            class="py-2 px-4 text-[#E2E8F0] text-sm text-start rounded-2xl border border-solid border-[#E2E8F0] font-medium bg-transparent  w-full">
+                            Figma
+                        </li>
+                        <li
+                            class="py-2 px-4 text-[#E2E8F0] text-sm text-start rounded-2xl border border-solid border-[#E2E8F0] font-medium bg-transparent  w-full">
+                            Jira & Confluence
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-[#737687] rounded-2xl p-6 grid-4 aboutSec">
+                    <div class="flex flex-col items-center justify-center gap-4 size-full">
+                        <p class="text-center headtext text-base text-black font-bold">
+                            Do you want to start a project together?
+                        </p>
+                        <a href="mailto:ajaysh65@gmail.com"
+                            class="bg-[#f55422] hover:bg-white hover:text-black text-white font-medium py-2 px-4 rounded-lg">
+                            Hire Me
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-[#3b4157] rounded-2xl p-6 grid-5 aboutSec">
+                    <p class="text-2xl pb-6 text-white  font-bold">Methodologies & Practices</p>
+                    <ul class="flex flex-row flex-wrap gap-2 w-full items-center ">
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-transparent">
+                            Agile Development
+                        </li>
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-transparent">
+                            Responsive Design
+                        </li>
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-transparent">
+                            Code Quality
+                        </li>
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-transparent">
+                            Performance Optimization
+                        </li>
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-transparent">
+                            Accessibility (WCAG)
+                        </li>
+                        <li
+                            class="py-1 px-4 text-[#E2E8F0] text-sm text-center rounded-xl border border-solid border-[#E2E8F0] font-medium bg-transparent">
+                            REST API Integration
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="p-4 md:py-24 bg-white max-w-5xl mx-auto" id="projects">
+            <p
+                class="text-gray-700 text-xl md:text-4xl text-center font-bold mb-6 md:mb-16 first-letter:text-[#f55422]">
+                Projects</p>
+            <div class="flex flex-col gap-4">
+                <div
+                    class="flex-wrap items-center justify-between p-4 flex gap-3 shadow-shadow1 border rounded-lg preview-section">
+                    <div class="flex-shrink-0 flex-grow-0 basis-auto sm:w-4/6 w-full">
+                        <p class="text-base font-bold">Infosys Limited | Client: T-Mobile</p>
+                        <img src="./assets/images/t-mobile.png" alt="Digit Insurance" class="swipeImage">
+                        <div class="flex gap-5 my-3 text-sand text-[13px] font-normal">
+                            <p class="text-[#6c757d]">T-Mobile provides wireless communication services, including
+                                mobile phone plans (postpaid/prepaid), home internet via 5G/4G, and various devices like
+                                smartphones and tablets, focusing on its 5G network with perks like streaming benefits,
+                                international roaming, and IoT solutions for businesses, aiming for broad coverage and
+                                customer value</p>
+                        </div>
+                        <div>
+                            <ul class="flex gap-2 items-center justify-start flex-wrap">
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    Angular 20</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    AEM</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    TypeScript</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    HTML5</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    CSS3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="https://www.godigit.com/"
+                        class="flex items-center gap-1 cursor-pointer hover-animation text-xs font-medium"
+                        target="_blank">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div
+                    class="flex-wrap items-center justify-between p-4 flex gap-3 shadow-shadow1 border rounded-lg preview-section">
+                    <div class="flex-shrink-0 flex-grow-0 basis-auto sm:w-4/6 w-full">
+                        <p class="text-base font-bold">Digit Insurance</p>
+                        <img src="./assets/images/digit_website_new.png" alt="Digit Insurance" class="swipeImage">
+                        <div class="flex gap-5 my-3 text-sand text-[13px] font-normal">
+                            <p class="text-[#6c757d]">Digit is an innovative insurance company that prioritizes
+                                simplicity and
+                                customer satisfaction through its user-friendly digital platforms and transparent
+                                policies.</p>
+                        </div>
+                        <div>
+                            <ul class="flex gap-2 items-center justify-start flex-wrap">
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    Angular 14+</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    AEM</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    TypeScript</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    HTML5</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    SCSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="https://www.godigit.com/"
+                        class="flex items-center gap-1 cursor-pointer hover-animation text-xs font-medium"
+                        target="_blank">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div
+                    class="flex-wrap items-center justify-between p-4 flex gap-3 shadow-shadow1 border rounded-lg preview-section">
+                    <div class="flex-shrink-0 flex-grow-0 basis-auto sm:w-4/6 w-full">
+                        <p class="text-base font-bold">ANDWEMET</p>
+                        <img src="./assets/images/andwemet.png" alt="carvewing" class="swipeImage">
+                        <div class="flex gap-5 my-3 text-sand text-[13px] font-normal">
+                            <p class="text-[#6c757d]">andwemet is designed for singles aged 28 and above who are seeking
+                                serious,
+                                committed relationships rather than casual dating.</p>
+                        </div>
+                        <div>
+                            <ul class="flex gap-2 items-center justify-start flex-wrap">
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    Angular 8</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    TypeScript</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    HTML5</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    Bootstrap 3</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    CSS3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="https://andwemet.com/"
+                        class="flex items-center gap-1 cursor-pointer hover-animation text-xs font-medium">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div
+                    class="flex-wrap items-center justify-between p-4 flex gap-3 shadow-shadow1 border rounded-lg preview-section">
+                    <div class="flex-shrink-0 flex-grow-0 basis-auto sm:w-4/6 w-full">
+                        <p class="text-base font-bold">Neehees</p>
+                        <img src="./assets/images/neehees.png" alt="carvewing" class="swipeImage">
+                        <div class="flex gap-5 my-3 text-sand text-[13px] font-normal">
+                            <p class="text-[#6c757d]">Bringing Indian Vegetarian and Vegan-Friendly Street Food to
+                                America.</p>
+                        </div>
+                        <div>
+                            <ul class="flex gap-2 items-center justify-start flex-wrap">
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    wordpress</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    Jquery</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    HTML5</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    Bootstrap 3</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    CSS3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="https://www.neehees.com/"
+                        class="flex items-center gap-1 cursor-pointer hover-animation text-xs font-medium">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div
+                    class="flex-wrap items-center justify-between p-4 flex gap-3 shadow-shadow1 border rounded-lg preview-section">
+                    <div class="flex-shrink-0 flex-grow-0 basis-auto sm:w-4/6 w-full">
+                        <p class="text-base font-bold">Carvewing Solutions LLP</p>
+                        <img src="./assets/images/carvewing.png" alt="carvewing" class="swipeImage">
+                        <div class="flex gap-5 my-3 text-sand text-[13px] font-normal">
+                            <p class="text-[#6c757d]">A static website to showcase of carvewing company.</p>
+                        </div>
+                        <div>
+                            <ul class="flex gap-2 items-center justify-start flex-wrap">
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    wordpress</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    Jquery</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    HTML5</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    Bootstrap 3</li>
+                                <li
+                                    class="text-xs font-bold border border-[#f1f5f9] border-solid rounded-lg py-1 px-2 bg-[#f1f5f9]/30 text-[#6c757d]">
+                                    CSS3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="https://carvewing.com/"
+                        class="flex items-center gap-1 cursor-pointer hover-animation text-xs font-medium">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="p-4 md:py-24" id="workEdu">
+            <p
+                class="text-gray-700 text-xl md:text-4xl text-center font-bold mb-6 md:mb-16 first-letter:text-[#f55422]">
+                Work
+            </p>
+            <div class="max-w-5xl mx-auto">
+                <div class="flex gap-8 flex-wrap">
+                    <div
+                        class="detailsWork bg-[#11141b] p-4 md:p-8 rounded-md flex-shrink-0 flex-grow-0 basis-auto w-full">
+                        <div class="flex">
+                            <div
+                                class="relative before:content-[''] before:absolute before:left-auto before:top-auto before:w-[1px] before:h-[calc(100%-30px)] before:bg-[#f55422] before:mt-8 after:content-[''] after:absolute after:left-auto after:top-auto after:w-2 after:h-2 after:bg-[#f55422] after:rounded-[50%] after:mt-2 after:-ml-1">
+                            </div>
+                            <div class="pl-6 md:pl-12 mb-12">
+                                <h4 class="text-white text-lg font-bold mb-2">Infosys Limited | Client: T-Mobile</h4>
+                                <p class="text-white text-[10px] font-medium bg-[#f55422] p-1 mb-2 inline-block">Aug
+                                    2024 -
+                                    Present</p>
+                                <p class="text-[#c5c5c5] text-sm font-bold mb-4">Technology Lead</p>
+                                <p class="text-[#c5c5c5] text-sm font-normal">
+                                    Collaborated closely with the client team to identify and resolve critical bugs in a
+                                    production
+                                    environment, improving overall application stability.Analyzed root causes of
+                                    recurring issues and
+                                    implemented long-term fixes, reducing bug reoccurrence.Coordinated with QA and
+                                    end-users to debug and
+                                    implement solutions for compatibility challenges, enhancing overall code quality and
+                                    maintainability.Contributed to a stable launch of the client's app post-Angular 18
+                                    upgrade.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div
+                                class="relative before:content-[''] before:absolute before:left-auto before:top-auto before:w-[1px] before:h-[calc(100%-30px)] before:bg-[#f55422] before:mt-8 after:content-[''] after:absolute after:left-auto after:top-auto after:w-2 after:h-2 after:bg-[#f55422] after:rounded-[50%] after:mt-2 after:-ml-1">
+                            </div>
+                            <div class="pl-6 md:pl-12 mb-12">
+                                <h4 class="text-white text-lg font-bold mb-2">Digit Insurance</h4>
+                                <p class="text-white text-[10px] font-medium bg-[#f55422] p-1 mb-2 inline-block">Aug
+                                    2021 -
+                                    Aug 2024</p>
+                                <p class="text-[#c5c5c5] text-sm font-bold mb-4">Software Engineer</p>
+                                <p class="text-[#c5c5c5] text-sm font-normal">
+                                    I am responsible for developing and maintaining software applications. The role
+                                    involves coding, testing, and debugging to ensure the creation of efficient and
+                                    high-quality software. Collaborating closely with cross-functional teams, contribute
+                                    to the successful delivery of projects by translating user requirements into
+                                    functional code solutions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div
+                                class="relative before:content-[''] before:absolute before:left-auto before:top-auto before:w-[1px] before:h-[calc(100%-30px)] before:bg-[#f55422] before:mt-8 after:content-[''] after:absolute after:left-auto after:top-auto after:w-2 after:h-2 after:bg-[#f55422] after:rounded-[50%] after:mt-2 after:-ml-1">
+                            </div>
+                            <div class="pl-6 md:pl-12">
+                                <h4 class="text-white text-lg font-bold mb-2">Carvewing Solutions LLP</h4>
+                                <p class="text-white text-[10px] font-medium bg-[#f55422] p-1 mb-2 inline-block">May
+                                    2017 -
+                                    Aug 2021</p>
+                                <p class="text-[#c5c5c5] text-sm font-bold mb-4">Software Engineer</p>
+                                <p class="text-[#c5c5c5] text-sm font-normal">
+                                    Designing websites, UI Designs, front end development (HTML,CSS,Javascript,Jquery),
+                                    Designing HTML email templates, Working with the marketing team to plan and
+                                    implement designs.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-4 md:pt-24 bg-[rgba(241,245,249,0.3)]" id="contactUs">
+            <p
+                class="text-gray-700 text-xl md:text-4xl text-center font-bold mb-8 capitalize first-letter:text-[#f55422]">
+                Get in touch</p>
+            <div class="max-w-5xl mx-auto flex gap-6 flex-wrap">
+                <div
+                    class="flex-shrink-0 flex-grow-0 basis-auto md:w-[calc(50%-12px)] w-full border border-[#E2E8F0] border-solid p-4 rounded-lg contctAnimation">
+                    <div class="mb-4">
+                        <h3 class="text-lg font-bold">Contact Information</h3>
+                        <div>
+                            <div class="flex items-baseline gap-3 mt-4">
+                                <i class="far fa-envelope"></i>
+                                <div class="flex items-start flex-col">
+                                    <p class="text-black text-base font-semibold mb-1">
+                                        Email:</p>
+                                    <a href="mailto:ajaysh65@gmail.com"
+                                        class="text-[#f55422] text-sm font-medium">ajaysh65@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-baseline gap-3 mt-4">
+                                <i class="fas fa-phone"></i>
+                                <div class="flex items-start flex-col">
+                                    <p class="text-black text-base font-semibold mb-1">
+                                        Phone:</p>
+                                    <a href="tel:8095240084" class="text-[#f55422] text-sm font-medium">+91
+                                        8095240084</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-2">Connect with me</h3>
+                        <ul class="flex items-center justify-start gap-2">
+                            <li
+                                class="w-8 h-8 rounded-full p-[3px] cursor-pointer flex items-center justify-center border border-solid border-white hover:bg-[#f55422]">
+                                <a href="https://www.linkedin.com/in/ajjayya-s-h-1a3668205/" target="_blank">
+                                    <i class="fab fa-linkedin-in text-base text-black group-hover:text-black"></i>
+                                </a>
+                            </li>
+                            <li
+                                class="w-8 h-8 rounded-full p-[3px] cursor-pointer flex items-center justify-center border border-solid border-white hover:bg-[#f55422]">
+                                <a href="mailto:ajaysh65@gmail.com">
+                                    <i class="far fa-envelope text-base text-black group-hover:text-black"></i>
+                                </a>
+                            </li>
+                            <li
+                                class="w-8 h-8 rounded-full p-[3px] cursor-pointer flex items-center justify-center border border-solid border-white hover:bg-[#f55422]">
+                                <a href="https://github.com/ajjayya009" target="_blank">
+                                    <i class="fab fa-github text-base text-black group-hover:text-black"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="flex-shrink-0 flex-grow-0 basis-auto md:w-[calc(50%-12px)] w-full border border-[#E2E8F0] border-solid px-8 pt-6 pb-8 rounded-lg contctAnimation">
+                    <div class="w-full">
+                        <form class="shadow-md rounded" id="contactForm" novalidate>
+                            <div class="mb-6 relative">
+                                <label class="block text-gray-700 text-sm font-semibold mb-2" for="username">
+                                    Name
+                                </label>
+                                <input
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent"
+                                    id="username" name="username" type="text" placeholder="Name"
+                                    aria-describedby="username-error">
+                                <p id="username-error" class="text-red-600 text-sm mt-1 hidden absolute left-0" role="alert"></p>
+                            </div>
+                            <div class="mb-6 relative">
+                                <label class="block text-gray-700 text-sm font-semibold mb-2" for="password">
+                                    Email
+                                </label>
+                                <input
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent"
+                                    id="email" type="email" name="email" placeholder="Email"
+                                    aria-describedby="email-error">
+                                <p id="email-error" class="text-red-600 text-sm mt-1 hidden absolute left-0" role="alert"></p>
+                            </div>
+                            <div class="mb-6 relative">
+                                <label class="block text-gray-700 text-sm font-semibold mb-2" for="message">
+                                    Message
+                                </label>
+                                <textarea
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent"
+                                    id="message" name="message" rows="6" placeholder="Your message here..."
+                                    aria-describedby="message-error"></textarea>
+                                <p id="message-error" class="text-red-600 text-sm mt-1 hidden absolute left-0" role="alert"></p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <button type="submit" id="submitBtn"
+                                    class="bg-[#f55422] hover:bg-[#f55422] text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="p-4 bg-[#1e2430]">
+            <p class="text-center text-gray-600 text-xs font-medium">Ajjayya S H &copy; 2024</p>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/js/fontawesome.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/engine@3.0.3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/all@3.0.3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="./assets/js/validation.js"></script>
 </body>
 
 </html>

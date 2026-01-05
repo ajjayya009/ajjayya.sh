@@ -26,6 +26,9 @@ module.exports = {
           to: { opacity: 1 },
         },
       },
+      fontFamily: {
+        sans: ['Inter','sans-serif'],
+      },
     },
   },
   plugins: [],

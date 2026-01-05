@@ -85,12 +85,12 @@
         const buildWhatsAppMessage = (form) => {
             const data = new FormData(form);
             return `
-                📩 *New Contact Form Message*
+            📩 *New Contact Form Message*
 
-                👤 *Name:* ${data.get("username")}
-                📧 *Email:* ${data.get("email")}
-                💬 *Message:* 
-                ${data.get("message")}
+            👤 *Name:* ${data.get("username")}
+            📧 *Email:* ${data.get("email")}
+            💬 *Message:* 
+            ${data.get("message")}
             `.trim();
         };
 
@@ -116,7 +116,7 @@
             const message = buildWhatsAppMessage(form);
 
             sendToWhatsApp({
-                phone: "916360045433", // 🔴 replace with your WhatsApp number
+                phone: "918095240084",
                 message
             });
             form.reset();
@@ -130,8 +130,8 @@
             minLength: 3,
             messages: {
                 required: "Name required",
-                alpha: "Only letters",
-                minLength: "Min 3 chars"
+                alpha: "Please enter only letters",
+                minLength: "Minimum 3 characters required"
             }
         },
         email: {
@@ -147,7 +147,7 @@
             minLength: 10,
             messages: {
                 required: "Message required",
-                minLength: "Min 10 chars"
+                minLength: "Please enter minimum 10 characters"
             }
         }
     };
