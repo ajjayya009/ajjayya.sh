@@ -1,7 +1,4 @@
-// Complete working configuration for a "linked-dots" effect
-
-
-
+// Complete working configuration for a "linked-dots" effects
 const scrollTopBtn = document.getElementById('scrollTop');
 const bannerSection = document.querySelector('#home');
 scrollTopBtn.addEventListener('click', function () {
@@ -20,8 +17,6 @@ document.addEventListener('scroll', function (e) {
     scrollTopBtn.classList.remove('fadeIn');
   }
 })
-
-
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
 var keys = { 37: 1, 38: 1, 39: 1, 40: 1 }
@@ -156,4 +151,23 @@ typeEffect();
   }
 
   window.addEventListener('keydown', devtoolsKeyHandler, true);
+})();
+
+(function () {
+  document.addEventListener('keydown', function (e) {
+    const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+
+    if (
+      (isMac && e.metaKey && e.altKey && ['I', 'J', 'C'].includes(e.key)) ||
+      (!isMac && e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) ||
+      (isMac && e.metaKey && e.key === 'U') ||
+      (!isMac && e.ctrlKey && e.key === 'U')
+    ) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+  });
+
+  document.addEventListener('contextmenu', e => e.preventDefault());
 })();
