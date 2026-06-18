@@ -91,7 +91,7 @@ Array.from(circularProgress).forEach((progressBar) => {
 
 
 const textElement = document.getElementById('typing-text');
-const phrases = ["Angular Developer.", "AEM Developer.", "Front-end Developer.", "Javascript Enthusiast."];
+const phrases = ["Angular Developer.", "Front-end Developer.", "Javascript Enthusiast."];
 const typeSpeed = 200;
 const eraseSpeed = 100;
 const delayBetweenPhrases = 2000;
