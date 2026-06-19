@@ -54,13 +54,13 @@ function pageFadeIn() {
 function heroAnimation() {
     const tl = gsap.timeline(
         {
-            defaults: { opacity: 0, ease: 'ease-in', duration: 1 },
+            defaults: { opacity: 0, ease: 'ease-in', duration: 0.6 },
 
         }
     );
-    tl.from('.authorName', { y: -40 })
-        .from('.authorPosition', { x: -60 }, '<1.7')
-        .from('.authorDescription', { y: 40 }, '<1');
+    tl.from('.authorName', { y: -40, duration: 0.6 })
+        .from('.authorPosition', { x: -60, duration: 0.5 }, '<0.8')
+        .from('.authorDescription', { y: 40, duration: 0.5 }, '<0.6');
     return tl;
 }
 
